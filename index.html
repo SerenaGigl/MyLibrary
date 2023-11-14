@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biblioteca</title>
+</head>
+<body>
+    <!-- Creiamo un sito la mia libreria: il sito prevede un menù, 
+        poi un div container che contiene i div con ogni scheda libro. 
+        Una scheda libro è formata da il titolo del libro, una descrizione e una foto. 
+        Creiamo anche il footer. 
+        Successivamente creiamogli la versione per mobile che prevede che ogni scheda sia visualizzata in colonne con display flex. Invece la version più grande >800px prevede la visualizzazione di tre schede ogni riga.
+    -->
+    <link rel="stylesheet" href="mylibrary.css">
+    <link rel="icon" type="image/x-icon" href="Biblioteca_logo no sfondo.png">
+    
+    <h1> Biblioteca Comunale "Luis Scalese"</h1>
+    
+    <div class="topnav">
+        <img src="Biblioteca_logo no sfondo.png" alt="logobiblio" id="biblio">
+        <a class="active" href="http://127.0.0.1:5500/mylibrary.html">Home</a>
+        <a href="#news">News</a>
+        <a href="#eventi">Eventi</a>
+        <a href="#about">About</a>
+        
+        <div class="search-container">
+            <form action="/action_page.php">
+                <input type="text" placeholder="Search.." name="search">
+                <button type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
+            </form>
+        </div>
+    </div>
+    
+    <div class="container">
+        <div class="libro1">
+            <h5>Le Armi della Luce</h5>
+            <img src="https://www.mondadori.it/content/uploads/2023/09/978880476059HIG.JPG" alt="LeArmiDellaLuce">
+            
+            <p id="autore"> Autore: Ken Follett </p>
+            <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit numquam non, eaque reprehenderit dolorem cumque perspiciatis consequuntur debitis voluptates dolores, accusantium repudiandae doloremque praesentium. Fuga quos recusandae excepturi iste enim?
+            </p>
+        </div>
+        
+        <div class="libro2">
+            <h5>Gelosia</h5>
+            <img src="https://www.clubdeglieditori.com/copertineLarge/880617.gif" alt="Gelosia">
+            <p id="autore"> Autore: Jo Nesbo </p>
+            <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit numquam non, eaque reprehenderit dolorem cumque perspiciatis consequuntur debitis voluptates dolores, accusantium repudiandae doloremque praesentium. Fuga quos recusandae excepturi iste enim?
+            </p>
+        </div>
+        
+        <div class="libro3">
+            <h5>La Verità del Ghiaccio</h5>
+            <img src="https://img.ibs.it/images/9788804678762_0_536_0_75.jpg" alt="LaVeritàdelGhiaccio">
+            <p id="autore"> Autore: Dan Brown </p>
+            <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit numquam non, eaque reprehenderit dolorem cumque perspiciatis consequuntur debitis voluptates dolores, accusantium repudiandae doloremque praesentium. Fuga quos recusandae excepturi iste enim?
+            </p>
+        </div>
+        
+        <div class="libro4">
+            <h5>Fairy Tale</h5>
+            <img src="https://th.bing.com/th/id/R.221fc41c5aa056770c2c8a07db459a27?rik=paly8Zl8EILV9w&riu=http%3a%2f%2fwww.callawaycoffee.com%2fwp-content%2fuploads%2f2022%2f09%2ffairy-tale-stephen-king.jpg&ehk=zrx%2fqb0goUMlCpPoH2un31C%2bK6HGx4JCvRNa4QdxDOs%3d&risl=&pid=ImgRaw&r=0" alt="FairyTale">
+            <p id="autore">Autore: Stephen King</p>
+            <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit numquam non, eaque reprehenderit dolorem cumque perspiciatis consequuntur debitis voluptates dolores, accusantium repudiandae doloremque praesentium. Fuga quos recusandae excepturi iste enim?
+                
+            </p>
+        </div>
+        
+        <div class="libro5">
+            <h5>La Mappa del Destino</h5>
+            <img src="https://th.bing.com/th/id/R.cfb289e384235d8478162096f118eab5?rik=QNxBZLdzcDqOfA&riu=http%3a%2f%2fwww.i-libri.com%2fwp-content%2fuploads%2f2011%2f01%2fmappadeldestino.jpg&ehk=lmNB5dXXvhR36rqSLPlHAhDJY9ss5hGQBPav1TSYrxY%3d&risl=&pid=ImgRaw&r=0" alt="LaMappaDelDestino">
+            
+            <p id="autore">Autore: Glenn Cooper</p>
+            <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit numquam non, eaque reprehenderit dolorem cumque perspiciatis consequuntur debitis voluptates dolores, accusantium repudiandae doloremque praesentium. Fuga quos recusandae excepturi iste enim?
+            </p>
+        </div>
+        <div class="libro6">
+            <h5>Il Signore degli anelli</h5>
+            <img src="https://www.libreriamazzini.it/wp-content/uploads/2020/06/A1194-2.jpg" alt="ilsgignoredeglianelli">
+            <h6>Trilogia completa</h6>
+            <p id="autore">Autore: J.R.R. Tolkien</p>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat odit cum temporibus, reprehenderit deleniti autem incidunt totam! Est porro cum eum! Minima aliquid amet vero vitae, magni assumenda sunt distinctio?
+            </p>
+        </div>
+        <div class="libro7">
+            <h5>I Miti di Cthulu</h5>
+            <img src="https://th.bing.com/th/id/OIP.zF3ohylFQnjnsO54W_8ozAHaKq?pid=ImgDet&rs=1" alt="mitidiCthulhu">
+            <p id="autore">Autore: Howard Philliphs Lovecraft</p>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe eum ipsum odit sequi modi eos magnam earum deserunt optio cumque, laudantium iusto unde distinctio sed architecto, culpa omnis amet illo!
+            </p>
+        </div>
+        <div class="libro8">
+            <h5>Le Cronache di Narnia</h5>
+            <img src="https://th.bing.com/th/id/R.f0aed1a720b0e91a021536676ca52df3?rik=dkSXWcGNBSxV2w&riu=http%3a%2f%2fwww.libreriamedievale.com%2fsites%2fdefault%2ffiles%2fcronache+9788804548959.jpg&ehk=h%2fCoWJ1k7xnBI3lfmT0EQDg6d1eFqJfpo9x43oLV5QI%3d&risl=&pid=ImgRaw&r=0" alt="cronacheNarnia">
+            <p id="autore">Autore: C.S. Lewis</p>
+            <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut neque iure iusto ducimus excepturi, repudiandae quisquam harum obcaecati repellat deserunt maiores a nemo in odio dolores ex eaque culpa. Iste.
+            </p>
+        </div>
+        <div class="libro9">
+            <h5>Harry Potter</h5>
+            <img src="https://www.onlinelibri.it/wp-content/uploads/2021/02/Harry-Potter-La-Saga-Completa.jpg" alt="harrypotter-sagacompleta">
+            <h6>Saga Completa</h6>
+            <p id="autore">Autore: J.K.Rowiling</p>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus ut non at velit porro eligendi commodi laudantium aliquam aspernatur. Enim ab nulla animi, architecto ratione tempore nostrum suscipit eius dolore.
+            </p>
+        </div>
+
+
+    </div>
+    
+    
+</div>
+
+<br><br><br><br><br>
+
+<div class="finepag">
+    
+    <p id="dove">Ci puoi trovare presso la Biblioteca Comunale "Luis Scalese" di Serrastretta,</p>
+    
+    <p id="ora">  dal lunedì al venerdì dalle 09.00 alle 12.00 </p>
+    <p id="E">&</p>
+    <p id="martedi">il martedì dalle 16.30 alle 18.00</p>
+    
+    <footer>
+        <p>Author: NameSurname</p>
+        <p><a href="mailto:mymail@example.com" style="color: beige">mymail@example.com </a></p>
+    </footer>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <div class="social">
+        <a href="https://www.facebook.com/pages/Biblioteca%20Comunale%20%22Luis%20Scalese%22/353942798667776/" class="fa fa-facebook"></a>
+        
+        <a href="https://www.instagram.com/biblio_serrastretta/" class="fa fa-instagram"></a>
+        
+        <a href="https://web.telegram.org/k/" class="fa fa-telegram"></a>
+        <span>Newsletters</span>
+    </div>
+</div>
+</body>
+</html>
